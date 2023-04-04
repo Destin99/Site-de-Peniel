@@ -1,0 +1,24 @@
+<div class="signup">
+    <div class="form-container">
+        <form [formGroup]="loginFormGroup" (ngSubmit)="handleSignUp()">
+            <h2>Inscription</h2>
+            <div class="form-line flex gap-10">
+                <input class="flex-1" type="text" name="firstname" placeholder="your firstname..."/>
+                <input class="flex-1" type="text" formControlName="lastname" placeholder="your lastname..."/>
+            </div>
+            <div class="form-line flex">
+                <input class="flex-1" type="email" formControlName="email" placeholder="your email..."/>
+            </div>
+            <div class="form-line flex">
+                <input class="flex-1" type="password" formControlName="password" placeholder="your password..."/>
+            </div>
+            <div class="form-line flex">
+                <input class="flex-1" type="password" formControlName="passwordConfirm" placeholder="Confirm your password..."/>
+            </div>
+            <div class="button flex">
+                <button class="btn flex-1">S'inscrire</button>
+            </div>
+        </form>
+    </div>
+    
+</div>

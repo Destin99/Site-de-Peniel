@@ -1,0 +1,41 @@
+.signup{
+    height: 70vh;
+}
+.btn{
+    font-size: 1.4rem;
+    height: 40px;
+    background-color: #1d1d1d;
+    border: none;
+    min-width: 100px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form-container{
+
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border: 0.1px solid #ccc;
+    transform: translate(-50%, -50%);
+}
+form{
+    padding: 5px;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.gap-10{
+    gap: 10;
+}
+form .form-line{
+    height: 40px;
+    padding: 3px 0;
+}
+form .form-line input{
+    font-size: 1.2rem;
+}

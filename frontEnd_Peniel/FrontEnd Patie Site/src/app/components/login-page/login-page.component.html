@@ -1,0 +1,26 @@
+<div class="container login">
+    <div class="card col-md-6 offset-md-3">
+        <div class="card-header"  style="color: black;">Connexion</div>
+        <div class="text-danger text-center" *ngIf="errorMessage">{{errorMessage}}</div>
+        <div class="card-body" style="color: black;">
+            <!-- {{loginFormGroup.value|  json}} permet d'afficher les valeurs dans les inputs -->
+            <form [formGroup]="loginFormGroup" (ngSubmit)="handleLogin()">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" formControlName="username" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" formControlName="password" class="form-control">
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                <div>
+                    <p>vous n'avez pas de compte? <a routerLink="/inscrire"> créer votre compte</a> </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+
